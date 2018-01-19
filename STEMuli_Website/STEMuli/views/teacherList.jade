@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h3.
+    Teachers
+    ul
+      each teachers, i in teacherList
+        li#teacher_list_item
+          a(href="#") #{teachers.teachers}'s name is #{teachers.teachers}
