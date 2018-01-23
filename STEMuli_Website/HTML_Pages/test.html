@@ -10,56 +10,34 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <title>Hello, world!</title>
-
 </head>
+<style>
+img {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 2;
+}
 
+p{
+position: absolute;
+    left: 0px;
+    top:200px;
+    z-index:1;
+}
+</style>
 <body>
-  <div class="container-fluid" id="home_nav">
+  <div class="container-fluid" id="test">
     <div class="row">
-      <div class="col-4">
-          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"><div class="display-2 home_text" >Create</div></button>
-        <div class="display-2 home_text"><a href="/STEMuli_Website/HTML_Pages/Explore.html">Create</a></div>
-        <div class="display-2 home_text"><a href="/STEMuli_Website/HTML_Pages/Explore.html">Explore</a></div>
-        <div class="display-2 home_text"><a href="#">Your Library</a></div>
-      </div>
-      <div class="col-8">
-        <div class="feedgrabbr_widget" id="fgid_15f3fc7e5ddb0c39637a55949"></div>
-        <script>
-          if (typeof(fg_widgets) === "undefined") fg_widgets = new Array();
-          fg_widgets.push("fgid_15f3fc7e5ddb0c39637a55949");
-        </script>
-        <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
+      <div class="col">
+        <h1>This is a heading</h1>
+  <img src="/STEMuli_Website/img/w3css.gif" width="100" height="140">
+  <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
     </div>
   </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="container fixed-bottom">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017 STEMuli, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-
-
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
