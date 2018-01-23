@@ -10,21 +10,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/STEMuli_Website/css/Home.css">
 
-  <!-- Custom styles for this template -->
 </head>
 
 <body>
   <main role="main">
-    <!--This is the text selection along the left side of the page-->
+    <div class="container-fluid h-100" id="home_nav">
+      <!--This is where the logo is-->
+      <div class="row h-100 justify-content-center">
+        <div clas="col"><img src="/STEMuli_Website/img/logo.png" class="img-fluid" width="200" height="400" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+    <!--Where the buttons are located-->
     <div class="container-fluid" id="home_nav">
       <div class="row">
-        <div class="col-4">
-          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"><div class="display-2 home_text">Create</div></button>
-          <div class="display-2 home_text"><a href="/STEMuli_Website/HTML_Pages/Explore.html">Explore</a></div>
-          <div class="display-2 home_text"><a href="#">Your Library</a></div>
+        <div class="col">
+          <!--<div style="position:relative;">
+          <img src="/STEMuli_Website/img/pen.png" alt="Pen" style="width:40%;position:absolute; left:-20px; bottom:-100px"></div>-->
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"><div class="display-2 home_text text-right ">Create</div></button>
+          <div class="createPen">
+            <img src="/STEMuli_Website/img/pen.png" alt="Pen">
+          </div>
         </div>
+        <div class="w-100">
+          <div class="col">
+            <div class="display-2 home_text"><a href="/STEMuli_Website/HTML_Pages/Explore.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="col">
+            <div class="display-2 home_text"><a href="#">Your Library</a>
+            </div>
+          </div>
+        </div>
+        <!--RSS feed here-->
         <div class="col-8">
-          <div class="feedgrabbr_widget" id="fgid_15f3fc7e5ddb0c39637a55949"></div>
+          <div class="feedgrabbr_widget" id="fgid_15f3fc7e5ddb0c39637a55949">
+          </div>
           <script>
             if (typeof(fg_widgets) === "undefined") fg_widgets = new Array();
             fg_widgets.push("fgid_15f3fc7e5ddb0c39637a55949");
@@ -33,7 +56,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -67,7 +89,7 @@
       </div>
     </div>
     <!-- FOOTER -->
-    <footer class="container fixed-bottom">
+    <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>&copy; 2017 STEMuli, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>

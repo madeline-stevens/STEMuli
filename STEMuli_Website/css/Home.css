@@ -4,3 +4,25 @@
 a{
   color:#ffffff;
 }
+.btn{color:#ffffff;}
+/*
+.img-fluid {
+  max-width: 80%;
+  max-height: 80%;
+}
+.text-right {
+  position: absolute;
+bottom: 0px;
+right: 16px;
+}
+*/
+
+.creatPen{
+  position:absolute;
+  top:0;
+  left:0;
+  width:0px;
+  height:0px;
+  background-color:blue;
+  z-index:1;
+}
