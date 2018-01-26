@@ -5462,6 +5462,7 @@ button.close {
 }
 
 .modal-footer {
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5473,6 +5474,7 @@ button.close {
   justify-content: flex-end;
   padding: 1rem;
   border-top: 1px solid #e9ecef;
+
 }
 
 .modal-footer > :not(:first-child) {
