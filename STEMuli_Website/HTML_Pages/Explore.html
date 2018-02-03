@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,19 +25,19 @@
         <div class="dropdown-menu">
           <!-- Dropdown menu links -->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onchange="javascript:removeAssignmentbyGrade('freshman');">
+            <input class="form-check-input" type="checkbox" value="" onchange="javascript:checkboxGrade(this,'freshman');">
             <label class="form-check-label" for="defaultCheck1">Freshman</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="javascript:addFilter(this,'sophmore');">
+            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'sophmore');">
             <label class="form-check-label" for="defaultCheck1">Sophmore</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="javascript:addFilter(this,'junior');">
+            <input class="form-check-input" type="checkbox" value="" onclick="checkboxGrade(this,'junior');">
             <label class="form-check-label" for="defaultCheck1">Junior</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="javascript:addFilter(this,'senior');">
+            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'senior');">
             <label class="form-check-label" for="defaultCheck1">Senior</label>
           </div>
         </div>
@@ -47,23 +47,23 @@
         <div class="dropdown-menu">
           <!-- Dropdown menu links -->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject(this,'Math');">
             <label class="form-check-label" for="defaultCheck1">Math</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('language Arts');">
             <label class="form-check-label" for="defaultCheck1">Language Arts</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('Science');">
             <label class="form-check-label" for="defaultCheck1">Science</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('Social Studies');">
             <label class="form-check-label" for="defaultCheck1">Social Studies</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="">
+            <input class="form-check-input" type="checkbox" value="" onclick="checkboxSubject('Spanish Tasks');">
             <label class="form-check-label" for="defaultCheck1">Spanish Tasks</label>
           </div>
         </div>
@@ -100,74 +100,57 @@ Topics
             </div>
           </div>
         </div>
+<button type="button" class="btn btn-primary" onclick="javascript:clicked();">Primary</button>
       </div>
     </div>
-    <script>
-      //Array that will store all assignments posted
-      let assignmentArray = [];
-      let truncateArray =[];
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="arraytable">
+      <tr>
+        <th>id</th>
+        <th>grade</th>
+        <th>subject</th>
+        <th>topic</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
-      function addAssignment(grade, subject, topic) {
-        var assignment = {
-          grade: grade,
-          subject: subject,
-          topic: topic
-        };
-        assignmentArray.push(assignment);
-      }
-      window.onload = function() {
-        console.log("Loading Array");
-        fillAssignmentArray();
-      };
-
-      function fillAssignmentArray() {
-        //Test data for filtering
-        addAssignment("freshman", "Math", "Algebra");
-        addAssignment("freshman", "Science", "Earth and Space Science");
-        addAssignment("sophmore", "Social Studies", "Global Connections");
-        addAssignment("sophmore", "Language Arts", "College and Career Readiness Anchor Standards for Language");
-        addAssignment("junior", "Math", "Functions");
-        addAssignment("junior", "Math", "Geometry");
-        addAssignment("senior", "Math", "Statistics and Probability");
-        addAssignment("senior", "Math", "Number and Quantity");
-        console.log("Array Loaded");
-      }
-
-      //Array interface
-      function removeAssignmentbyGrade(grade_filter) {
-        for (i = 0; i < assignmentArray.length; i++) {
-          if (grade_filter==assignmentArray[i].grade) {
-          console.log("pushing: "+assignmentArray[i].grade+ " into Array");
-            truncateArray.push(assignmentArray[i]);
-            assignmentArray[i].remove();
-          }
-        }
-      }
-      function removeAssignmentbySubject(subject_filter) {
-        for (i = 0; i < assignmentArray.length; i++) {
-          if (subject_filter==assignmentArray[i].subject) {
-          console.log("pushing: "+assignmentArray[i].grade+ " into Array");
-            truncateArray.push(assignmentArray[i]);
-            assignmentArray[i].remove();
-          }
-        }
-      }
-
-      function gradeFilter(event, gradeLevel) {
-        // Adds grade into filter array
-        if (event.checked) {
-          console.log("Checked");
-        } else {
-          console.log("not checked");
-        }
-      }
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="/STEMuli_Website/js/Explore.js" crossorigin="anonymous"></script>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="/STEMuli_Website/js/Explore.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
