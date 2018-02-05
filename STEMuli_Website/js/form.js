@@ -11,7 +11,7 @@ var FormStuff = {
 
   applyConditionalRequired: function() {
 
-    $(".require-if-active").each(function() {
+    (".require-if-active").each(function() {
       var el = $(this);
       if ($(el.data("require-pair")).is(":checked")) {
         el.prop("required", true);
@@ -25,3 +25,33 @@ var FormStuff = {
 };
 
 FormStuff.init();
+
+function checkedStudent(){
+
+  var x = document.getElementById('checked');
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+}
+
+function checkedTeacher(){
+
+  var x = document.getElementById('checked');
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+}
+
+function checkedCorp(){
+
+  var x = document.getElementById('checked');
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+}

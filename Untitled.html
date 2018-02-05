@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>STEMuli</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha3 84-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/STEMuli_Website/css/Home.css">
+  <link rel="stylesheet" type="text/css" href="/STEMuli_Website/scout_css/form.css">
+  <script type="text/JavaScript" src="/STEMuli_Website/js/form.js"></script>
+</head>
+
+<body>
+  <main role="main">
+    <!--This is where the logo is-->
+    <div class="row h-100 justify-content-center">
+      <a href = "/STEMuli_Website/HTML_Pages/Home.html">
+        <div clas="col"><img src="/STEMuli_Website/img/logo.png" class="img-fluid" width="200" height="400" alt="Responsive image">
+        </div>
+      </a>
+
+    </div>
+<!-- Test form for radio -->
+  <form method="post" action="#">
+
+  <h4>Type of User</h4>
+  <div>
+
+    <!-- Student Radio & form -->
+  <group class="myinline-radio">
+    <div>
+
+      <input class="form-check-input" type="radio" name="choice-user" id = "choice-user-student" required>
+      <label class="form-check-label" for="choice-user-student">Student</label>
+
+      <div class="reveal-if-active">
+
+        <label for="school-name">School Name</label>
+        <input type="text" id="school-name" name="school-name" style="width: 300px" data-require-pair="#choice-school-name">
+
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" style="width: 200px" data-require-pair="#choice-first-name">
+        </div>
+        <div>
+          <label for="first-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" style="width: 200px" data-require-pair="#choice-last-name">
+        </div>
+        <div>
+          <label for="first-name">Email Address</label>
+          <input type="text" id="email" name="email" style="width: 300px" data-require-pair="#choice-email">
+        </div>
+        <label for="first-name">Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="first-name">Confirm Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+          <label for="student-grade">Grade</label>
+          <select class="selectpicker">
+            <optgroup label="Elementary">
+              <option>1st Grade</option>
+              <option>2nd Grade</option>
+              <option>3rd Grade</option>
+              <option>4th Grade</option>
+              <option>5th Grade</option>
+              <option>6th Grade</option>
+            </optgroup>
+            <optgroup label="Middle">
+              <option>7th Grade</option>
+              <option>8th Grade</option>
+            </optgroup>
+            <optgroup label="High">
+              <option>9th Grade</option>
+              <option>10th Grade</option>
+              <option>1th Grade</option>
+              <option>12th Grade</option>
+            </optgroup>
+          </select>
+
+      <div>
+        <label for="student-age">Age</label>
+        <select class="selectpicker">
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+        </select>
+      </div>
+          <label for="dream-job">Dream Job</label>
+          <input type="text" id="dream-job" name="dream-job" style="width: 200px" data-require-pair="#choice-dream-job">
+
+        <div>
+          <label for="role-model">Role Model (favorite athlete, actor, musician)</label>
+          <input type="text" id="last-name" name="last-name" style="width: 350px" data-require-pair="#choice-last-name">
+        </div>
+        <label for="dream-university">Dream University</label>
+        <input type="text" id="dream-university" name="dream-university" style="width: 350px" data-require-pair="#choice-last-name">
+        <div>
+          <label for="student-career">Career Pathway/Industry</label>
+          <input type="text" id="student-career" name="student-career" style="width: 200px" data-require-pair="#choice-last-name">
+        </div>
+        <div>
+          <label for="student-favorite">Favorite Band/Company</label>
+          <input type="text" id="student-favorite" name="student-favorite" style="width: 200px" data-require-pair="#choice-last-name">
+        </div>
+        <label for="world-problem">World problem you would like to solve</label>
+        <input type="text" id="world-problem" name="world-problem" style="width: 350px" data-require-pair="#choice-last-name">
+      </div>
+    </div>
+
+      <!-- END Student Radio & form -->
+
+        <!-- Teacher Radio & form -->
+    <div>
+      <!--
+      <input type="radio" name="choice-animals" id="choice-animals-cats">
+      <label for="choice-animals-cats">I like cats more</label>
+      -->
+      <input class="form-check-input" type="radio" name="choice-user" id = "choice-user-teacher" required>
+      <label class="form-check-label" for="choice-user-teacher">Teacher</label>
+
+      <div class="reveal-if-active">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" style="width: 200px" data-require-pair="#choice-first-name">
+        </div>
+        <div>
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" style="width: 200px" data-require-pair="#choice-last-name">
+        </div>
+        <div>
+          <label for="teacher-email">Email Address</label>
+          <input type="text" id="teacher-email" name="teacher-email" style="width: 300px" data-require-pair="#choice-email">
+        </div>
+        <label for="first-name">Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="first-name">Confirm Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="teacher-dob">Date of Birth</label>
+        <input placeholder="MM/DD/YYYY" type="text" id="teacher-dob" name="teacher-dob" style="width: 110px" data-require-pair="#choice-email">
+        <div>
+          <label for="college-attended">College Attended</label>
+          <input type="text" id="college-attended" name="college-attended" style="width: 200px" data-require-pair="#choice-email">
+        </div>
+        <div>
+          <label for="teacher-major">Major</label>
+          <input type="text" id="teacher-major" name="teacher-major" style="width: 200px" data-require-pair="#choice-email">
+        </div>
+        <label for="teacher-speciality">Speciality</label>
+        <input placeholder="Subjects Taught" type="text" id="teacher-speciality" name="teacher-speciality" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="teacher-school">School</label>
+        <input type="text" id="teacher-school" name="teacher-school" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="school-state">State</label>
+        <input type="text" id="school-stateschool-state" name="school-state" style="width: 50px" data-require-pair="#choice-email">
+        <label class="form-check-label" for="choice-user-teacher">Would you like to register as STEMuli Creator?</label>
+        <div>
+
+        <label for="creator"><input type="checkbox" name="creator" id="creator">Yes!</label>
+      </div>
+      </div>
+    </div>
+
+      <!-- END Teacher Radio & form -->
+
+
+        <!-- Corporation Radio & form -->
+    <div>
+      <input class="form-check-input" type="radio" name="choice-user" id = "choice-user-corporation" required>
+      <label class="form-check-label" for="choice-user-corporation">Corporation</label>
+
+      <div class="reveal-if-active">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" style="width: 200px" data-require-pair="#choice-first-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" style="width: 200px" data-require-pair="#choice-last-name">
+        </div>
+        <div>
+          <label for="teacher-email">Email Address</label>
+          <input type="text" id="teacher-email" name="teacher-email" style="width: 300px" data-require-pair="#choice-email">
+        </div>
+        <label for="first-name">Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="first-name">Confirm Password</label>
+        <input type="text" id="email" name="email" style="width: 200px" data-require-pair="#choice-email">
+
+        <label for="teacher-email">Phone Number</label>
+        <input placeholder="xxx-xxx-xxxx" type="text" id="teacher-email" name="teacher-email" style="width: 100px" data-require-pair="#choice-email">
+        <label for="teacher-email">HQ Location</label>
+        <input type="text" id="teacher-email" name="teacher-email" style="width: 250px" data-require-pair="#choice-email">
+
+
+
+      </div>
+    </div>
+
+      <!-- END Corporation Radio & form -->
+    </group>
+  </div>
+
+
+
+</form>
+<!-- end test form -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
