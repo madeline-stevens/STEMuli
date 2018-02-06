@@ -1,57 +1,45 @@
-var FormStuff = {
-
-  init: function() {
-    this.applyConditionalRequired();
-    this.bindUIActions();
-  },
-
-  bindUIActions: function() {
-    $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
-  },
-
-  applyConditionalRequired: function() {
-
-    (".require-if-active").each(function() {
-      var el = $(this);
-      if ($(el.data("require-pair")).is(":checked")) {
-        el.prop("required", true);
-      } else {
-        el.prop("required", false);
-      }
-    });
-
-  }
-
-};
-
-FormStuff.init();
-
 function checkedStudent(){
+  var student = document.getElementById('studentDiv');
+  var teacher = document.getElementById('teacherDiv');
+  var corp = document.getElementById('corpDiv');
+  var info = document.getElementById('userInfo');
+      if (student.style.display === "none") {
 
-  var x = document.getElementById('checked');
-      if (x.style.display === "none") {
-          x.style.display = "block";
+          teacher.style.display = "none";
+          corp.style.display = "none";
+          info.style.display="flex";
+          student.style.display = "block";
       } else {
-          x.style.display = "none";
+          student.style.display = "none";
       }
 }
 
 function checkedTeacher(){
-
-  var x = document.getElementById('checkedgi');
-      if (x.style.display === "none") {
-          x.style.display = "block";
+  var student = document.getElementById('studentDiv');
+  var teacher = document.getElementById('teacherDiv');
+  var corp = document.getElementById('corpDiv');
+  var info = document.getElementById('userInfo');
+      if (teacher.style.display === "none") {
+          corp.style.display = "none";
+          student.style.display = "none";
+          info.style.display="flex";
+          teacher.style.display = "block";
       } else {
-          x.style.display = "none";
+          teacher.style.display = "none";
       }
 }
 
 function checkedCorp(){
-
-  var x = document.getElementById('checked');
-      if (x.style.display === "none") {
-          x.style.display = "block";
+  var student = document.getElementById('studentDiv');
+  var teacher = document.getElementById('teacherDiv');
+  var corp = document.getElementById('corpDiv');
+  var info = document.getElementById('userInfo');
+      if (corp.style.display === "none") {
+          student.style.display = "none";
+          teacher.style.display = "none";
+          info.style.display="flex";
+          corp.style.display = "block";
       } else {
-          x.style.display = "none";
+          corp.style.display = "none";
       }
 }
