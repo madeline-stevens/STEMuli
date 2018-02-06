@@ -38,7 +38,7 @@ function checkedStudent(){
 
 function checkedTeacher(){
 
-  var x = document.getElementById('checked');
+  var x = document.getElementById('checkedgi');
       if (x.style.display === "none") {
           x.style.display = "block";
       } else {
