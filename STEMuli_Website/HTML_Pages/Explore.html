@@ -15,36 +15,36 @@
 </head>
 
 <body>
-  <!-- Large button groups (default and split) -->
+  <h1>Narrow by:</h2>
   <!-- Default dropright button -->
   <div class="container-fluid">
     <div class="row">
-      <div class="btn-group dropright">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="btn-group dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle btn-xlong" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Grade
     </button>
         <div class="dropdown-menu">
           <!-- Dropdown menu links -->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onchange="javascript:checkboxGrade(this,'freshman');" checked>
+            <input class="form-check-input" type="checkbox" value="" onchange="javascript:checkboxGrade(this,'Freshman');" checked>
             <label class="form-check-label" for="defaultCheck1">Freshman</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'sophmore');" checked>
+            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'Sophmore');" checked>
             <label class="form-check-label" for="defaultCheck1">Sophmore</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="checkboxGrade(this,'junior');" checked>
+            <input class="form-check-input" type="checkbox" value="" onclick="checkboxGrade(this,'Junior');" checked>
             <label class="form-check-label" for="defaultCheck1">Junior</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'senior');" checked>
+            <input class="form-check-input" type="checkbox" value="" onclick="javascript:checkboxGrade(this,'Senior');" checked>
             <label class="form-check-label" for="defaultCheck1">Senior</label>
           </div>
         </div>
       </div>
-      <div class="btn-group dropright">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
+      <div class="btn-group dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle btn-xlong" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
         <div class="dropdown-menu">
           <!-- Dropdown menu links -->
           <div class="form-check">
@@ -52,15 +52,15 @@
             <label class="form-check-label" for="defaultCheck1">Math</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('language Arts');" checked>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject(this,'Language Arts');" checked>
             <label class="form-check-label" for="defaultCheck1">Language Arts</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('Science');" checked>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject(this,'Science');" checked>
             <label class="form-check-label" for="defaultCheck1">Science</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject('Social Studies');" checked>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkboxSubject(this,'Social Studies');" checked>
             <label class="form-check-label" for="defaultCheck1">Social Studies</label>
           </div>
           <div class="form-check">
@@ -69,172 +69,77 @@
           </div>
         </div>
       </div>
-      <div class="btn-group dropright">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Topics
-</button>
+</div>
+</div>
 
-        <div class="dropdown-menu">
-          <!-- Dropdown menu links -->
-          <div class="container-fluid">
-            <div class=>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Math</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Language Arts</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Science</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Social Studies</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="">
-                <label class="form-check-label" for="defaultCheck1">Spanish Tasks</label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--Assignment list of JSON data-->
+
+<!--Row 1 of cards-->
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c1r1_title">Card title</h5>
+      <p class="card-text" id="c1r1_descr">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c1r1_timestamp">Last updated 3 mins ago</small>
     </div>
   </div>
-
-  <h1>Filtered Table</h1>
-  <div class="table-responsive">
-    <table class="table table-bordered table-striped" id="filterTable">
-      <tr>
-        <th>id</th>
-        <th>grade</th>
-        <th>subject</th>
-        <th>topic</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c2r1_tile">Card title</h5>
+      <p class="card-text" id="c2r1_descr">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c2r1_"timestamp>Last updated 3 mins ago</small>
+    </div>
   </div>
-  <h1>Truncated Table</h1>
-  <div class="table-responsive">
-    <table class="table table-bordered table-striped" id="truncTable">
-      <tr>
-        <th>id</th>
-        <th>grade</th>
-        <th>subject</th>
-        <th>topic</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c3r1_title">Card title</h5>
+      <p class="card-text" id="c3r1_descr">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c3r1_timestamp">Last updated 3 mins ago</small>
+    </div>
   </div>
+</div>
+<!--Row 2 of cards-->
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c1r2_title">Card title</h5>
+      <p class="card-text" id="c1r2_descr">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c1r2_timestamp">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c2r2_tile">Card title</h5>
+      <p class="card-text" id="c2r2_descr">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c2r1_"timestamp>Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/img/rollercoaster.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="c3r2_title">Card title</h5>
+      <p class="card-text" id="c3r2_descr">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted" id="c3r1_timestamp">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

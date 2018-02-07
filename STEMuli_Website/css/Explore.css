@@ -2,3 +2,11 @@
     height: 13px;
     width: 13px;
 }
+.btn-xlong {
+    padding: 10px 50px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}

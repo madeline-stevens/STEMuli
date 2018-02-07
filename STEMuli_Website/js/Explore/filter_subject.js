@@ -6,7 +6,7 @@ function checkboxSubject(event, subject) {
     reAdd_subject(subject);
     clearTables();
     filltruncTable();
-    console.log(truncateArray);
+    fillFilteredTable();
   } else {
     assignmentArray = assignmentArray.filter(removeBySubject, {
       subject: subject
@@ -19,7 +19,7 @@ function checkboxSubject(event, subject) {
 }
 //Array interface
 function removeBySubject(value, index, arr) {
-  if (this.grade == value.grade) {
+  if (this.subject == value.subject) {
     truncateArray.push(value);
   }
   return this.subject != value.subject;
@@ -31,7 +31,7 @@ for(i=0;i<truncateArray.length;i++){
     assignmentArray.push(truncateArray[i]);
   }
 }
-truncateArray=truncateArray.filter(removeTruncate,{subject:subject});
+truncateArray=truncateArray.filter(removeTruncateSubject,{subject:subject});
 }
 
 function removeTruncateSubject(value,index,arr){
