@@ -9,7 +9,6 @@ function checkboxGrade(event, grade) {
     });
   }
   clearTables();
-  console.log(truncateArray);
   filltruncTable();
   fillFilteredTable();
 }
@@ -31,6 +30,5 @@ truncateArray=truncateArray.filter(removeTruncateGrade,{grade:grade});
 }
 
 function removeTruncateGrade(value,index,arr){
-console.log("Hello");
 return this.grade!=value.grade
 }
