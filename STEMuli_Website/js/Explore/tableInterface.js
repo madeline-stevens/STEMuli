@@ -4,13 +4,13 @@ let truncateArray = [];
 filterTable = document.getElementById("filterTable");
 truncTable = document.getElementById("truncTable");
 function clearTables(){
-  for(x=0;x<filterTable.rows.length;x++){
+  for(x=1;x<filterTable.rows.length;x++){
     filterTable.rows[x].cells[0].innerHTML = "";
     filterTable.rows[x].cells[1].innerHTML = "";
     filterTable.rows[x].cells[2].innerHTML = "";
     filterTable.rows[x].cells[3].innerHTML = "";
   }
-  for(x=0;x<truncTable.rows.length;x++){
+  for(x=1;x<truncTable.rows.length;x++){
     truncTable.rows[x].cells[0].innerHTML = "";
     truncTable.rows[x].cells[1].innerHTML = "";
     truncTable.rows[x].cells[2].innerHTML = "";
