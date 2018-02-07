@@ -36,11 +36,13 @@ function checkboxGrade(event, grade) {
       grade: grade
     });
   }
+
+  document.getElementById("demo").innerHTML = "Truncate Array: \n" + JSON.stringify(truncateArray);
+  document.getElementById("demo1").innerHTML = "Current Filtered items: " + JSON.stringify(assignmentArray);
 }
 //Array interface
 function removeByGrade(value, index, arr) {
   if (this.grade == value.grade) {
-    console.log(this.grade+" equals "+value.grade);
     truncateArray.push(value);
   }
   return this.grade != value.grade;
@@ -54,7 +56,7 @@ function reAdd_grade(grade) {
   }
 }
 
-/*function checkboxSubject(event, subject) {
+function checkboxSubject(event, subject) {
   if (event.checked) {
     reAdd_subject(subject);
   } else {
@@ -75,32 +77,24 @@ function removeBySubject(value, index, arr) {
   return this.subject != value.subject;
 }
 
-/*function reAdd_subject(subject) {
+function reAdd_subject(subject) {
   for (i = 0; i < truncateArray.length; i++) {
     if (subject == truncateArray[i].subject) {
       assignmentArray.push(truncateArray[i]);
     }
   }
 }
-*/
+
 function clicked() {
   table = document.getElementById("arraytable");
-  table1 = document.getElementById("truncatetable");
   //row
-  for (i = 1; i <= assignmentArray.length; i++) {
+  for (i = 1; i < assignmentArray.length; i++) {
+    console.log(i);
     for (x = 0; x<table.rows[i].cells.length; x++) {
       table.rows[i].cells[0].innerHTML = assignmentArray[i-1].idNum;
       table.rows[i].cells[1].innerHTML = assignmentArray[i-1].grade;
       table.rows[i].cells[2].innerHTML = assignmentArray[i-1].subject;
       table.rows[i].cells[3].innerHTML = assignmentArray[i-1].topic;
-    }
-  }
-  for (i = 1; i <= truncateArray.length; i++) {
-    for (x = 0; x<table.rows[i].cells.length; x++) {
-      table1.rows[i].cells[0].innerHTML = assignmentArray[i-1].idNum;
-      table1.rows[i].cells[1].innerHTML = assignmentArray[i-1].grade;
-      table1.rows[i].cells[2].innerHTML = assignmentArray[i-1].subject;
-      table1.rows[i].cells[3].innerHTML = assignmentArray[i-1].topic;
     }
   }
 }
