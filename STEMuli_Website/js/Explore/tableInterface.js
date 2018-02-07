@@ -1,4 +1,5 @@
 //Array that will store all assignments posted
+//HERE BITCH
 let assignmentArray = [];
 let truncateArray = [];
 filterTable = document.getElementById("filterTable");
