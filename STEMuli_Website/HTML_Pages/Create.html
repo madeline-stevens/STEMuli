@@ -11,32 +11,42 @@
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-      <link rel="stylesheet" type="text/css" href="/STEMuli_Website/css/Create.css">
+      <link rel="stylesheet" type="text/css" href="/css/Create.css">
 
     </header>
 
     <main role="main">
+      <!--This is where the logo is-->
+      <div class="row h-100 justify-content-center">
+        <a href="/HTML_Pages/Home.html">
+          <div clas="col"><img src="/img/logo.png" class="img-fluid" width="200" height="400" alt="Responsive image">
+          </div>
+        </a>
+
+      </div>
       <div class="container-fluid">
         <div class="row no-gutters">
           <!--This is the left column where subjects are listed -->
           <div class="col-4">
             <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><h1>Inspire</h1></a>
-              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><h1>Aim</h2></a>
-              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><h1>Explore</h2></a>
-              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><h1>Create</h1></a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><h1>Reflect/Apply</h1></a>
+              <a class="list-group-item list-group-item-action active" id="inspire-list" data-toggle="list" href="#list-inspire" role="tab" aria-controls="inspire"><h1>Inspire</h1></a>
+              <a class="list-group-item list-group-item-action" id="aim-list" data-toggle="list" href="#list-aim" role="tab" aria-controls="aim"><h1>Aim</h2></a>
+              <a class="list-group-item list-group-item-action" id="explore-list" data-toggle="list" href="#list-explore" role="tab" aria-controls="explore"><h1>Explore</h2></a>
+              <a class="list-group-item list-group-item-action" id="create-list" data-toggle="list" href="#list-create" role="tab" aria-controls="create"><h1>Create</h1></a>
+              <a class="list-group-item list-group-item-action" id="reflect-list" data-toggle="list" href="#list-reflect" role="tab" aria-controls="reflect"><h1>Reflect/Apply</h1></a>
             </div>
           </div>
           <!--This is the right column where subject data is listed-->
           <div class="col-8">
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="tab-pane fade show active" id="list-inspire" role="tabpanel" aria-labelledby="inspire-list">
+
                 <div class="list-group">
                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-toggle="list">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-2"><img src="/STEMuli_Website/img/Create_images/lightbulb.png" alt="RollerCoaster Image" class="img-thumbnail"></div>
+                        <div class="col-2"><img src="/img/Create_images/lightbulb.png" alt="RollerCoaster Image" class="img-thumbnail">
+                        </div>
                         <div class="col-10">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1"><h5 class="mb-3 text-center">Performance Task: Polynomials - Structural Engineer: Roller Coaster Design</h5></h5>
@@ -47,25 +57,40 @@
                       </div>
                     </div>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">List group item heading</h5>
-                      <small class="text-muted">3 days ago</small>
-                    </d
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">List group item heading</h5>
-                      <small class="text-muted">3 days ago</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
-                  </a>
                 </div>
               </div>
-              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                <div class="tab-pane fade" id="list-aim" role="tabpanel" aria-labelledby="aim-list">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-toggle="list">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                      </div>
+                      <p class="mb-1">1</p>
+                      <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                      <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                      <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                  </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="list-explore" role="tabpanel" aria-labelledby="explore-list">
                 <div class="list-group">
                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-toggle="list">
                     <div class="d-flex w-100 justify-content-between">
@@ -93,47 +118,74 @@
                   </a>
                 </div>
               </div>
+
+              <div class="tab-pane fade" id="list-create" role="tabpanel" aria-labelledby="create-list">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-toggle="list">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">1</p>
+                    <small>Donec id elit non mi porta.</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5>
+                      <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="list-reflect" role="tabpanel" aria-labelledby="reflect-list">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-toggle="list">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">1</p>
+                  <small>Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+              </div>
+            </div>
+
+
               <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
               <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-            </div>
+
           </div>
         </div>
       </div>
-<!--
-      <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-        <form>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1"><h1 class="display-3">Inspire</h1></label>
-              <p class="h4">Video Upload</p>
-            <div class="form-group">
-              <input type="file" class="form-control-7/file" id="exampleFormControlFile1">
-            </div>
-            <h1 class="display-3">Aim</h1>
-            <p class="h4">Goal</p>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <form>
-      </form>
-    <div class="form-group">
-      <p class="h4">Audience</p>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <div class="form-group">
-      <p class="h4">Problem</p>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </form>
-      </div>
-</div>
-</div>
--->
-<div class="container">
-  <div class="row">
-      <div class="display-4"><a href="/STEMuli_Website/HTML_Pages/Home.html">Home</a></div>
-    </div>
-</div>
+
 
 
       <!-- FOOTER -->
